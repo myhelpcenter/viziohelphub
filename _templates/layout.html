@@ -1,0 +1,11 @@
+{# custom_layout.html - Extend default Sphinx HTML layout for CapitalOne guide #}
+
+{% extends "!layout.html" %}
+
+{% block extrahead %}
+    <!-- Search engine verification -->
+<meta name="google-site-verification" content="nSK8unydjKIIQiskWcyalOLyFzCb_zTmDDGyCsOAJHY" />
+
+
+    {{ super() }}
+{% endblock %}
