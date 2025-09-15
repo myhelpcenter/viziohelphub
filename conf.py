@@ -29,6 +29,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # -- Options for HTML output -------------------------------------------------
 
 # Theme (Recommended: sphinx_rtd_theme for modern docs)
+# Make sure to install first: pip install sphinx_rtd_theme
 html_theme = 'sphinx_rtd_theme'
 
 # SEO-friendly page info
@@ -46,13 +47,11 @@ html_allow_unsafe = True
 html_theme_options = {
     'logo_only': True,
     'display_version': False,
-    'style_nav_header_background': '#007bff',  # match VIZIO blue
+    'collapse_navigation': False,
+    'sticky_navigation': True,
+    'navigation_depth': 3,
+    'style_nav_header_background': '#007bff',  # VIZIO blue
 }
 
-# Static assets (CSS/JS/images)
+# Static assets (images, favicon, etc.)
 html_static_path = ['_static']
-
-# Extra CSS to improve look
-html_css_files = [
-    'custom.css',
-]
