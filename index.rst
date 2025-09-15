@@ -1,6 +1,5 @@
-Vizio.com/setup - Set Up Your VIZIO Smart TV
-=============================================
-
+Vizio.com/setup
+================
 Get Started with SmartCast, Streaming, and Online Account Management
 
 .. raw:: html
