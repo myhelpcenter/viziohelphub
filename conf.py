@@ -22,17 +22,14 @@ release = '1.0.0'
 # Sphinx extensions (add more if needed)
 extensions = []
 
-# Allow raw HTML blocks inside .rst
-raw_enabled = True
-
 # Paths and exclude rules
 templates_path = ['_templates']  # use only if you create custom templates
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # -- Options for HTML output -------------------------------------------------
 
-# Theme (default: 'alabaster'; you can change to 'sphinx_rtd_theme')
-# html_theme = 'sphinx_rtd_theme'
+# Theme (Recommended: sphinx_rtd_theme for modern docs)
+html_theme = 'sphinx_rtd_theme'
 
 # SEO-friendly page info
 html_title = "Set Up Your VIZIO Smart TV – vizio.com/setup Guide"
@@ -47,8 +44,15 @@ html_allow_unsafe = True
 
 # Theme customization
 html_theme_options = {
-    'show_powered_by': False,
+    'logo_only': True,
+    'display_version': False,
+    'style_nav_header_background': '#007bff',  # match VIZIO blue
 }
 
-# Static assets (CSS/JS/images) if needed
-# html_static_path = ['_static']
+# Static assets (CSS/JS/images)
+html_static_path = ['_static']
+
+# Extra CSS to improve look
+html_css_files = [
+    'custom.css',
+]
