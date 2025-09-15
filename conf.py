@@ -10,6 +10,7 @@ import sys
 
 # -- Project information -----------------------------------------------------
 
+# SEO-friendly page info
 project = 'Set Up Your VIZIO Smart TV'
 copyright = '2025, VIZIO Inc.'
 author = 'VIZIO Support Team'
@@ -22,20 +23,23 @@ release = '1.0.0'
 # Sphinx extensions (add more if needed)
 extensions = []
 
+# Allow raw HTML blocks inside .rst
+raw_enabled = True
+
 # Paths and exclude rules
 templates_path = ['_templates']  # use only if you create custom templates
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # -- Options for HTML output -------------------------------------------------
 
-# Theme (Recommended: sphinx_rtd_theme for modern docs)
-# Make sure to install first: pip install sphinx_rtd_theme
-html_theme = 'sphinx_rtd_theme'
+# Theme (default: 'alabaster'; you can change to 'sphinx_rtd_theme')
+# html_theme = 'sphinx_rtd_theme'
 
 # SEO-friendly page info
 html_title = "Set Up Your VIZIO Smart TV – vizio.com/setup Guide"
 html_short_title = "VIZIO TV Setup"
 html_favicon = 'favicon.ico'  # place favicon.ico in _static or root
+
 
 # Hide "View page source"
 html_show_sourcelink = False
@@ -45,13 +49,8 @@ html_allow_unsafe = True
 
 # Theme customization
 html_theme_options = {
-    'logo_only': True,
-    'display_version': False,
-    'collapse_navigation': False,
-    'sticky_navigation': True,
-    'navigation_depth': 3,
-    'style_nav_header_background': '#007bff',  # VIZIO blue
+    'show_powered_by': False,
 }
 
-# Static assets (images, favicon, etc.)
-html_static_path = ['_static']
+# Static assets (CSS/JS/images) if needed
+# html_static_path = ['_static']
